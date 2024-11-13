@@ -1,0 +1,50 @@
+# Compiled binaries
+/bin/
+**/build
+/lib/
+.cache
+/tests/build/
+*.dot*
+stderr.txt
+
+# IDE-specific files and directories
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Build artifacts
+*.o
+*.obj
+*.dll
+*.exe
+
+# Dependency directories
+/libs/
+/vendor/
+
+# Miscellaneous
+*.log
+*.DS_Store
+
+# callgrind
+callgrind.out.*
+
+# LSP
+compile_commands.json
+
+# gdb
+brestore.*
+.gdb_history
+
+/dependencies/
+
+**/generated/
+
+*.iso
+*.bin
+*.elf
+*.EFI
+*.INF
+*.hdd
