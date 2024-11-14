@@ -1,14 +1,53 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="BelloTrade is a netherlands-based executive search firm headed by Bram Markusse"
+    />
+    <meta
+      name="theme-color"
+      content="#f7f7f7"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#222430"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <title>Testing for all</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="sizes.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Hi there</h1>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <input
+      type="checkbox"
+      class="theme-switch"
+      id="theme-switch"
+      aria-label="Toggle color theme"
+    />
+    <div id="page">
+      <div id="content">
+        <header>
+          <label for="theme-switch" class="switch-label"></label>
+        </header>
+        <main>
+          <h1>Hello world</h1>
+        </main>
+        <footer>
+          <small>Test test</small>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

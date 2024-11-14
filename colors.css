@@ -1,0 +1,80 @@
+@layer colors {
+  :root {
+    /* Light Theme Colors */
+    --light-switch-shadow: #373d4e;
+    --light-switch-icon: "🌚";
+    --light-text: #222430; /* Primary text color */
+    --light-bg: #f7f7f7; /* Main background color */
+    --light-theme: #d34a97; /* Primary theme color */
+    --light-secondary-bg: #eaeaea; /* Secondary background for cards or containers */
+    --light-border: #d0d0d0; /* Border color */
+    --light-accent: #ffb86c; /* Accent color for buttons/links */
+    --light-highlight: #f1fa8c; /* Highlight color for special elements */
+
+    /* Dark Theme Colors */
+    --dark-switch-shadow: #fce477;
+    --dark-switch-icon: "🌝";
+    --dark-text: #f7f7f7; /* Primary text color */
+    --dark-bg: #222430; /* Main background color */
+    --dark-theme: #bd93f9; /* Primary theme color */
+    --dark-secondary-bg: #333645; /* Secondary background for cards or containers */
+    --dark-border: #44475a; /* Border color */
+    --dark-accent: #ff79c6; /* Accent color for buttons/links */
+    --dark-highlight: #50fa7b; /* Highlight color for special elements */
+
+    /* Default mode */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-icon: var(--light-switch-icon);
+    --text-color: var(--light-text);
+    --bg-color: var(--light-bg);
+    --theme-color: var(--light-theme);
+    --secondary-bg-color: var(--light-secondary-bg);
+    --border-color: var(--light-border);
+    --accent-color: var(--light-accent);
+    --highlight-color: var(--light-highlight);
+  }
+
+  /* Switched mode */
+  .theme-switch:checked ~ #page {
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-icon: var(--dark-switch-icon);
+    --text-color: var(--dark-text);
+    --bg-color: var(--dark-bg);
+    --theme-color: var(--dark-theme);
+    --secondary-bg-color: var(--dark-secondary-bg);
+    --border-color: var(--dark-border);
+    --accent-color: var(--dark-accent);
+    --highlight-color: var(--dark-highlight);
+  }
+
+  /* Theme switcher */
+  .theme-switch {
+    /* Hides the checkbox */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .switch-label {
+    cursor: pointer;
+    display: flex;
+  }
+
+  .switch-label::before {
+    content: var(--switch-icon);
+    font-size: 40px;
+    transition: text-shadow 0.2s;
+  }
+
+  .theme-switch:focus ~ #page .switch-label::before,
+  .switch-label:hover::before {
+    text-shadow: 0 0 15px var(--switch-shadow-color);
+  }
+
+  .theme-switch:focus ~ #page .switch-label::after,
+  .switch-label:hover::after {
+    opacity: 1;
+  }
+}
