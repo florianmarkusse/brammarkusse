@@ -27,40 +27,30 @@
     --spacing-xl: 48px;
     --spacing-xxl: 64px;
 
-    /* Margin Variables */
-    --margin-xxs: 4px;
-    --margin-xs: 8px;
-    --margin-sm: 16px;
-    --margin-md: 24px;
-    --margin-lg: 32px;
-    --margin-xl: 48px;
-
-    /* Padding Variables */
-    --padding-xxs: 4px;
-    --padding-xs: 8px;
-    --padding-sm: 16px;
-    --padding-md: 24px;
-    --padding-lg: 32px;
-    --padding-xl: 48px;
-
     /* Border Radius for Rounded Corners */
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 16px;
+
+    /* Icon Sizes */
+    --icon-size-xs: 12px; /* Very small icons */
+    --icon-size-sm: 16px; /* Small icons */
+    --icon-size-md: 24px; /* Medium icons (default) */
+    --icon-size-lg: 32px; /* Large icons */
+    --icon-size-xl: 48px; /* Extra large icons */
+    --icon-size-xxl: 64px; /* Huge icons */
   }
 
-  body {
-    font-size: var(--font-size-md); /* Default font size for body text */
+  #page {
+    font-size: var(--font-size-md);
     line-height: var(--line-height-normal);
   }
 
-  /* Paragraph Text */
   p {
     font-size: var(--font-size-md);
     line-height: var(--line-height-normal);
   }
 
-  /* Headings */
   h1 {
     font-size: var(--font-size-xxl);
     line-height: var(--line-height-tight);
@@ -83,22 +73,19 @@
     line-height: var(--line-height-tight);
   }
 
-  /* Buttons */
   button {
     font-size: var(--font-size-sm);
     height: var(--button-height-md);
     padding: 0 var(--spacing-md);
-    margin: var(--margin-sm);
+    margin: var(--spacing-sm);
     border-radius: var(--border-radius-md);
     text-align: center;
   }
 
-  /* Links */
   a {
     font-size: var(--font-size-sm);
   }
 
-  /* Form Inputs */
   input,
   textarea,
   select {
@@ -106,134 +93,109 @@
     border-radius: var(--border-radius-sm);
   }
 
-  /* Responsive Adjustments */
+  .icon-xs {
+    width: var(--icon-size-xs);
+    height: var(--icon-size-xs);
+  }
+
+  .icon-sm {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+  }
+
+  .icon-md {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+  }
+
+  .icon-lg {
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
+  }
+
+  .icon-xl {
+    width: var(--icon-size-xl);
+    height: var(--icon-size-xl);
+  }
+
+  .icon-xxl {
+    width: var(--icon-size-xxl);
+    height: var(--icon-size-xxl);
+  }
 
   @media (min-width: 480px) {
     :root {
-      /* Adjust text sizes for small screens (tablets, small desktops) */
       --font-size-sm: 16px;
       --font-size-md: 18px;
       --font-size-lg: 20px;
       --font-size-xl: 28px;
       --font-size-xxl: 36px;
 
-      /* Adjust spacing for medium screens */
+      --icon-size-sm: 20px;
+      --icon-size-md: 28px;
+      --icon-size-lg: 36px;
+      --icon-size-xl: 48px;
+
       --spacing-sm: 18px;
       --spacing-md: 28px;
       --spacing-lg: 38px;
-    }
-
-    /* Adjustments for paragraphs and headings */
-    p {
-      font-size: var(--font-size-md);
-    }
-
-    h1 {
-      font-size: var(--font-size-xxl);
-    }
-
-    h2 {
-      font-size: var(--font-size-xl);
-    }
-
-    h3 {
-      font-size: var(--font-size-lg);
     }
   }
 
   @media (min-width: 768px) {
     :root {
-      /* Adjust text sizes for medium screens (large tablets, small desktops) */
       --font-size-sm: 18px;
       --font-size-md: 20px;
       --font-size-lg: 24px;
       --font-size-xl: 32px;
       --font-size-xxl: 40px;
 
-      /* Adjust spacing for larger screens */
+      --icon-size-sm: 24px;
+      --icon-size-md: 32px;
+      --icon-size-lg: 40px;
+      --icon-size-xl: 56px;
+
       --spacing-sm: 20px;
       --spacing-md: 32px;
       --spacing-lg: 44px;
-    }
-
-    p {
-      font-size: var(--font-size-md);
-    }
-
-    h1 {
-      font-size: var(--font-size-xxl);
-    }
-
-    h2 {
-      font-size: var(--font-size-xl);
-    }
-
-    h3 {
-      font-size: var(--font-size-lg);
     }
   }
 
   @media (min-width: 1024px) {
     :root {
-      /* Adjust text sizes for larger screens (desktop) */
       --font-size-sm: 20px;
       --font-size-md: 22px;
       --font-size-lg: 26px;
       --font-size-xl: 36px;
       --font-size-xxl: 48px;
 
-      /* Adjust spacing for larger desktops */
-      --spacing-sm: 22px;
+      --icon-size-sm: 28px;
+      --icon-size-md: 36px;
+      --icon-size-lg: 44px;
+      --icon-size-xl: 60px;
+
+      --spacing-sm: 24px;
       --spacing-md: 36px;
       --spacing-lg: 50px;
-    }
-
-    p {
-      font-size: var(--font-size-md);
-    }
-
-    h1 {
-      font-size: var(--font-size-xxl);
-    }
-
-    h2 {
-      font-size: var(--font-size-xl);
-    }
-
-    h3 {
-      font-size: var(--font-size-lg);
     }
   }
 
   @media (min-width: 1200px) {
     :root {
-      /* Adjust text sizes for very large screens (large desktop) */
       --font-size-sm: 22px;
       --font-size-md: 24px;
       --font-size-lg: 28px;
       --font-size-xl: 40px;
       --font-size-xxl: 56px;
 
-      /* Adjust spacing for very large screens */
-      --spacing-sm: 24px;
+      --icon-size-sm: 32px;
+      --icon-size-md: 40px;
+      --icon-size-lg: 48px;
+      --icon-size-xl: 64px;
+
+      --spacing-sm: 28px;
       --spacing-md: 40px;
       --spacing-lg: 54px;
-    }
-
-    p {
-      font-size: var(--font-size-md);
-    }
-
-    h1 {
-      font-size: var(--font-size-xxl);
-    }
-
-    h2 {
-      font-size: var(--font-size-xl);
-    }
-
-    h3 {
-      font-size: var(--font-size-lg);
     }
   }
 }
