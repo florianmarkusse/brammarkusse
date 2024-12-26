@@ -7,93 +7,64 @@
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="BelloTrade is a netherlands-based executive search firm headed by Bram Markusse"
+      content="Personal website of Bram Markusse, headhunter"
     />
-    <meta
-      name="theme-color"
-      content="#f7f7f7"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#222430"
-      media="(prefers-color-scheme: dark)"
-    />
-
-    <title>Testing for all</title>
+    <title>Bram Markusse | Headhunter</title>
 
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="colors.css" />
-    <link rel="stylesheet" href="sizes.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
   </head>
   <body>
-    <input
-      type="checkbox"
-      class="theme-switch"
-      id="theme-switch"
-      aria-label="Toggle color theme"
-    />
-    <div id="page">
-      <a href="#content" class="skip-link">Skip to content</a>
-      <div id="content">
-        <header>
-          <label for="theme-switch" class="color-theme-toggler">
-            <svg
-              role="img"
-              aria-labelledby="dark-mode"
-              width="800px"
-              height="800px"
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title id="dark-mode">Switch to Dark Mode</title>
-              <path
-                d="M0 8.00002C0 4.75562 1.93132 1.9623 4.70701 0.707031L5.65436 1.65438C5.2352 2.51383 5 3.47946 5 4.50002C5 8.08987 7.91015 11 11.5 11C12.5206 11 13.4862 10.7648 14.3456 10.3457L15.293 11.293C14.0377 14.0687 11.2444 16 8 16C3.58172 16 0 12.4183 0 8.00002Z"
-              />
-              <path
-                d="M11.5 7.00003L9 4.50003L11.5 2.00003L14 4.50003L11.5 7.00003Z"
-              />
-            </svg>
-            <svg
-              role="img"
-              aria-labelledby="light-mode"
-              width="800px"
-              height="800px"
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title id="light-mode">Switch to Light Mode</title>
-              <path d="M7 3V0H9V3H7Z" />
-              <path d="M9 13V16H7V13H9Z" />
-              <path
-                d="M11 8C11 9.65685 9.65685 11 8 11C6.34315 11 5 9.65685 5 8C5 6.34315 6.34315 5 8 5C9.65685 5 11 6.34315 11 8Z"
-              />
-              <path d="M0 9H3V7H0V9Z" />
-              <path d="M16 7H13V9H16V7Z" />
-              <path
-                d="M3.75735 5.17157L1.63603 3.05025L3.05025 1.63603L5.17157 3.75735L3.75735 5.17157Z"
-              />
-              <path
-                d="M12.2426 10.8284L14.364 12.9497L12.9497 14.364L10.8284 12.2426L12.2426 10.8284Z"
-              />
-              <path
-                d="M3.05025 14.364L5.17157 12.2426L3.75735 10.8284L1.63603 12.9498L3.05025 14.364Z"
-              />
-              <path
-                d="M12.9497 1.63604L10.8284 3.75736L12.2426 5.17158L14.364 3.05026L12.9497 1.63604Z"
-              />
-            </svg>
-          </label>
-        </header>
-        <main>
-          <h1>Hello world</h1>
-        </main>
-        <footer>
-          <small>Test test</small>
-        </footer>
+    <main>
+      <div id="colors-parents">
+        <div>
+          <input
+            type="color"
+            class="first-color"
+            id="background-color"
+            value="#ffffff"
+          />
+          <p id="background-color-text">x</p>
+        </div>
+        <div>
+          <input
+            type="color"
+            class="second-color"
+            id="foreground-color"
+            value="#000000"
+          />
+          <p id="foreground-color-text">x</p>
+        </div>
       </div>
-    </div>
+
+      <article id="hero-content">
+        <svg
+          class="slide-in"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 3V7M12 17V21M3 12H7M17 12H21M12 12H12.01M19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div>
+          <span class="fade-in-first">Mijn werk is niet geheim,</span>
+          <div id="hero-second" class="resizable-text">
+            <span class="fade-in-second">wel discreet.</span>
+            <span class="fade-in-third">-- Bram</span>
+          </div>
+        </div>
+      </article>
+
+      <address>
+        <a href="tel:+31653130196">+31 6 53 13 01 96</a>
+        <a href="mailto:info@bellotrade.nl">info@bellotrade.nl</a>
+      </address>
+    </main>
   </body>
 </html>
