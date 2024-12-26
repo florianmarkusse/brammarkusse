@@ -1,11 +1,17 @@
 :root {
-  --foreground: black;
-  --background: white;
+  --foreground: #d6d6d6;
+  --background: #a5957e;
 }
 
 * {
   color: var(--foreground);
   background-color: var(--background);
+  font-style: normal;
+
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #colors-parents {
@@ -39,7 +45,7 @@
 
 .slide-in {
   opacity: 0;
-  animation: slideInFromBottom 1s ease-out forwards 4s;
+  animation: slideInFromBottom 1s ease-out forwards 3s;
 }
 
 @keyframes fadeIn {
@@ -63,12 +69,12 @@
 
 .fade-in-third {
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards 3s;
+  animation: fadeIn 1s ease-in-out forwards 4s;
 }
 
 svg {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   stroke: var(--foreground);
 }
 
@@ -81,6 +87,12 @@ main {
   justify-content: space-evenly;
 }
 
+#hero-content > * {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
 #hero-content {
   display: flex;
   align-items: center;
@@ -89,25 +101,11 @@ main {
   text-align: center;
   font-size: clamp(16px, 4.5vw, 36px);
 
-  width: 50%;
+  gap: 1em;
+
+  width: 100%;
   min-width: 200px;
-  max-width: 400px;
-}
-
-#hero-text {
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  width: 100%;
-}
-
-#hero-second {
-  display: flex;
-  justify-content: space-between;
-}
-
-#hero-text > * {
-  width: 100%;
+  max-width: 450px;
 }
 
 address {
